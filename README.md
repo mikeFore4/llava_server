@@ -1,6 +1,6 @@
 # Llava server
 
-##About
+## About
 
 This repo contains a minimal setup to run the multimodal llava 1.5 model locally on CPU in a docker container. Of note, the server is setup to match the API of OpenAI models. Thus, if you have code that interacts with GPT-V, but you want to replace it with llava - ALL YOU HAVE TO DO is change the "endpoint" and "key" in your openai calls. Use the "test_llava.py" file as a reference.
 
@@ -8,7 +8,7 @@ This llava 1.5 server runs on CPU only! It is possible to run on GPU with some m
 
 This uses a specific quantized version of llava 1.5 that should have an okay tradeoff between speed and quality. To change the llava version used, adjust the wget command in the Dockerfile and the filename in run_server.sh. Refer to this [repo](https://huggingface.co/mys/ggml_llava-v1.5-7b/tree/main) to download different weights.
 
-##Getting Started
+## Getting Started
 
 Begin by building the docker image:
 
